@@ -26,7 +26,7 @@ var CrudeColorPicker = React.createClass({
 
     // initialize canvas with simple color gradient
     componentDidMount: function() {
-        var canvas= document.getElementById("colors");
+        var canvas= React.findDOMNode(this.refs.myCanvas);
         var ctx = canvas.getContext("2d");
     
         var gradient = ctx.createLinearGradient(0, 0, 250, 0);
